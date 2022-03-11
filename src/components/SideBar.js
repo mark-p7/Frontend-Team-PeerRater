@@ -24,13 +24,13 @@ const SideBar = () => (
             <li className="nav-item active">
                 <a className="nav-link" href="index.html">
                     <i className="fas fa-fw fa-tachometer-alt" />
-                    <span>Dashboard</span>
+                    <span>Home</span>
                 </a>
             </li>
             {/* Divider */}
             <hr className="sidebar-divider" />
             {/* Heading */}
-            <div className="sidebar-heading">Interface</div>
+            <div className="sidebar-heading">GROUPS</div>
             {/* Nav Item - Pages Collapse Menu */}
             <li className="nav-item">
                 <a
@@ -42,7 +42,7 @@ const SideBar = () => (
                     aria-controls="collapseTwo"
                 >
                     <i className="fas fa-fw fa-cog" />
-                    <span>Components</span>
+                    <span>Recent Groups</span>
                 </a>
                 <div
                     id="collapseTwo"
@@ -51,16 +51,20 @@ const SideBar = () => (
                     data-parent="#accordionSidebar"
                 >
                     <div className="bg-white py-2 collapse-inner rounded">
-                        <h6 className="collapse-header">Custom Components:</h6>
+                        <h6 className="collapse-header">Recent Groups:</h6>
                         <a className="collapse-item" href="buttons.html">
-                            Buttons
+                            COMP 3975
                         </a>
                         <a className="collapse-item" href="cards.html">
-                            Cards
+                            COMP 3717
                         </a>
                     </div>
                 </div>
             </li>
+            {/* Divider */}
+            <hr className="sidebar-divider" />
+            {/* Heading */}
+            <div className="sidebar-heading">SURVEYS</div>
             {/* Nav Item - Utilities Collapse Menu */}
             <li className="nav-item">
                 <a
@@ -72,7 +76,7 @@ const SideBar = () => (
                     aria-controls="collapseUtilities"
                 >
                     <i className="fas fa-fw fa-wrench" />
-                    <span>Utilities</span>
+                    <span>Surveys</span>
                 </a>
                 <div
                     id="collapseUtilities"
@@ -81,18 +85,18 @@ const SideBar = () => (
                     data-parent="#accordionSidebar"
                 >
                     <div className="bg-white py-2 collapse-inner rounded">
-                        <h6 className="collapse-header">Custom Utilities:</h6>
+                        <h6 className="collapse-header">Surveys:</h6>
                         <a className="collapse-item" href="utilities-color.html">
-                            Colors
+                            Survey 1
                         </a>
                         <a className="collapse-item" href="utilities-border.html">
-                            Borders
+                            Survey 2
                         </a>
                         <a className="collapse-item" href="utilities-animation.html">
-                            Animations
+                            Survey 3
                         </a>
                         <a className="collapse-item" href="utilities-other.html">
-                            Other
+                            Survey 4
                         </a>
                     </div>
                 </div>
