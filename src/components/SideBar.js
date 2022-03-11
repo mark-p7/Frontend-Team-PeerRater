@@ -30,7 +30,7 @@ const SideBar = () => (
             {/* Divider */}
             <hr className="sidebar-divider" />
             {/* Heading */}
-            <div className="sidebar-heading">Interface</div>
+            <div className="sidebar-heading">GROUPS</div>
             {/* Nav Item - Pages Collapse Menu */}
             <li className="nav-item">
                 <a
@@ -42,7 +42,7 @@ const SideBar = () => (
                     aria-controls="collapseTwo"
                 >
                     <i className="fas fa-fw fa-cog" />
-                    <span>Components</span>
+                    <span>Recent Groups</span>
                 </a>
                 <div
                     id="collapseTwo"
@@ -61,6 +61,10 @@ const SideBar = () => (
                     </div>
                 </div>
             </li>
+            {/* Divider */}
+            <hr className="sidebar-divider" />
+            {/* Heading */}
+            <div className="sidebar-heading">SURVEYS</div>
             {/* Nav Item - Utilities Collapse Menu */}
             <li className="nav-item">
                 <a
@@ -72,7 +76,7 @@ const SideBar = () => (
                     aria-controls="collapseUtilities"
                 >
                     <i className="fas fa-fw fa-wrench" />
-                    <span>Utilities</span>
+                    <span>Surveys</span>
                 </a>
                 <div
                     id="collapseUtilities"
