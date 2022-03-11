@@ -24,7 +24,7 @@ const SideBar = () => (
             <li className="nav-item active">
                 <a className="nav-link" href="index.html">
                     <i className="fas fa-fw fa-tachometer-alt" />
-                    <span>Dashboard</span>
+                    <span>Home</span>
                 </a>
             </li>
             {/* Divider */}
@@ -51,12 +51,12 @@ const SideBar = () => (
                     data-parent="#accordionSidebar"
                 >
                     <div className="bg-white py-2 collapse-inner rounded">
-                        <h6 className="collapse-header">Custom Components:</h6>
+                        <h6 className="collapse-header">Recent Groups:</h6>
                         <a className="collapse-item" href="buttons.html">
-                            Buttons
+                            COMP 3975
                         </a>
                         <a className="collapse-item" href="cards.html">
-                            Cards
+                            COMP 3717
                         </a>
                     </div>
                 </div>
@@ -85,18 +85,18 @@ const SideBar = () => (
                     data-parent="#accordionSidebar"
                 >
                     <div className="bg-white py-2 collapse-inner rounded">
-                        <h6 className="collapse-header">Custom Utilities:</h6>
+                        <h6 className="collapse-header">Surveys:</h6>
                         <a className="collapse-item" href="utilities-color.html">
-                            Colors
+                            Survey 1
                         </a>
                         <a className="collapse-item" href="utilities-border.html">
-                            Borders
+                            Survey 2
                         </a>
                         <a className="collapse-item" href="utilities-animation.html">
-                            Animations
+                            Survey 3
                         </a>
                         <a className="collapse-item" href="utilities-other.html">
-                            Other
+                            Survey 4
                         </a>
                     </div>
                 </div>
