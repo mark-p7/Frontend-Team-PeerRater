@@ -6,7 +6,7 @@ import {
     faCog, faFaceSurprise,
     faHandPaper,
     faHome,
-    faLaughBeam, faPaperclip,
+    faLaughBeam, faListNumeric, faPaperclip,
     faTachometer,
     faUserGroup
 } from "@fortawesome/free-solid-svg-icons";
@@ -22,6 +22,7 @@ const SideBar = () => (
                 href="../"
             >
                 <div className="sidebar-brand-icon rotate-n-15">
+                    <FontAwesomeIcon className="fa-lg" icon={faListNumeric} />
                     <FontAwesomeIcon className="fa-lg" icon={faFaceSurprise} />
                 </div>
                 <div className="sidebar-brand-text mx-3">
