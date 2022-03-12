@@ -9803,6 +9803,10 @@ a:focus {
   overflow-x: hidden;
 }
 
+#content-wrapper {
+  max-height: 100vh;
+}
+
 #wrapper #content-wrapper #content {
   flex: 1 0 auto;
 }
