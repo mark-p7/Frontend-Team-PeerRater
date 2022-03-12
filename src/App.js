@@ -26,7 +26,7 @@ function App() {
       <SideBar />
         <div id="content-wrapper" className="d-flex flex-column">
     <NavBar />
-    <div className="container">
+    <div className="container" id="main-container">
  
     <BrowserRouter>
       <Routes>

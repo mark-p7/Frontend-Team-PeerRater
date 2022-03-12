@@ -4118,6 +4118,12 @@ input[type="button"].btn-block {
   justify-content: space-between;
 }
 
+#main-container {
+  max-height:100vh;
+  overflow-y:auto;
+}
+
+
 .navbar-brand {
   display: inline-block;
   padding-top: 0.3125rem;
