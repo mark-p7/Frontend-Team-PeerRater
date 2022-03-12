@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom';
 
 const footer={
   footer:{
-      position: "absolute",
-      bottom: 0,
-      marginBottom: "20px",
-      width: "100%"
+      /*Need to fix this to  bottom a different way*/
+      // position: "absolute",
+      // bottom: 0,
+      // marginBottom: "20px",
+      // width: "100%"
   }
 }
 const Footer = () => (
