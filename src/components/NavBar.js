@@ -1,5 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+    faSearch,
+    faBars,
+    faBell,
+    faFileAlt,
+    faEnvelope,
+    faUser,
+    faCogs,
+    faList, faSignOut
+} from '@fortawesome/free-solid-svg-icons'
 const NavBar = () => (
       <>
           {/* Topbar */}
@@ -9,7 +20,7 @@ const NavBar = () => (
                   id="sidebarToggleTop"
                   className="btn btn-link d-md-none rounded-circle mr-3"
               >
-                  <i className="fa fa-bars" />
+                  <FontAwesomeIcon icon={faBars} />
               </button>
               {/* Topbar Search */}
               <form className="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
@@ -23,7 +34,7 @@ const NavBar = () => (
                       />
                       <div className="input-group-append">
                           <button className="btn btn-primary" type="button">
-                              <i className="fas fa-search fa-sm" />
+                              <FontAwesomeIcon icon={faSearch} />
                           </button>
                       </div>
                   </div>
@@ -41,7 +52,7 @@ const NavBar = () => (
                           aria-haspopup="true"
                           aria-expanded="false"
                       >
-                          <i className="fas fa-search fa-fw" />
+                          <FontAwesomeIcon icon={faSearch} />
                       </a>
                       {/* Dropdown - Messages */}
                       <div
@@ -59,7 +70,7 @@ const NavBar = () => (
                                   />
                                   <div className="input-group-append">
                                       <button className="btn btn-primary" type="button">
-                                          <i className="fas fa-search fa-sm" />
+                                          <FontAwesomeIcon icon={faSearch} />
                                       </button>
                                   </div>
                               </div>
@@ -77,7 +88,7 @@ const NavBar = () => (
                           aria-haspopup="true"
                           aria-expanded="false"
                       >
-                          <i className="fas fa-bell fa-fw" />
+                          <FontAwesomeIcon icon={faBell} />
                           {/* Counter - Alerts */}
                           <span className="badge badge-danger badge-counter">3+</span>
                       </a>
@@ -90,7 +101,7 @@ const NavBar = () => (
                           <a className="dropdown-item d-flex align-items-center" href="#">
                               <div className="mr-3">
                                   <div className="icon-circle bg-primary">
-                                      <i className="fas fa-file-alt text-white" />
+                                      <FontAwesomeIcon icon={faFileAlt} />
                                   </div>
                               </div>
                               <div>
@@ -139,7 +150,7 @@ const NavBar = () => (
                           aria-haspopup="true"
                           aria-expanded="false"
                       >
-                          <i className="fas fa-envelope fa-fw" />
+                          <FontAwesomeIcon icon={faEnvelope} />
                           {/* Counter - Messages */}
                           <span className="badge badge-danger badge-counter">7</span>
                       </a>
@@ -248,15 +259,15 @@ const NavBar = () => (
                           aria-labelledby="userDropdown"
                       >
                           <a className="dropdown-item" href="../profilepage">
-                              <i className="fas fa-user fa-sm fa-fw mr-2 text-gray-400" />
+                              <FontAwesomeIcon className="fas fa-list fa-sm fa-fw mr-2 text-gray-400"  icon={faUser} />
                               Profile
                           </a>
                           <a className="dropdown-item" href="#">
-                              <i className="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400" />
+                              <FontAwesomeIcon className="fas fa-list fa-sm fa-fw mr-2 text-gray-400"  icon={faCogs} />
                               Settings
                           </a>
                           <a className="dropdown-item" href="#">
-                              <i className="fas fa-list fa-sm fa-fw mr-2 text-gray-400" />
+                              <FontAwesomeIcon className="fas fa-list fa-sm fa-fw mr-2 text-gray-400" icon={faList} />
                               Activity Log
                           </a>
                           <div className="dropdown-divider" />
@@ -266,7 +277,7 @@ const NavBar = () => (
                               data-toggle="modal"
                               data-target="#logoutModal"
                           >
-                              <i className="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400" />
+                              <FontAwesomeIcon className="fas fa-list fa-sm fa-fw mr-2 text-gray-400" icon={faSignOut} />
                               Logout
                           </a>
                       </div>
