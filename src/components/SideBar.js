@@ -1,5 +1,15 @@
 import React from 'react';
 import NavBar from "./NavBar";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+    faBars,
+    faCog, faFaceSurprise,
+    faHandPaper,
+    faHome,
+    faLaughBeam, faPaperclip,
+    faTachometer,
+    faUserGroup
+} from "@fortawesome/free-solid-svg-icons";
 const SideBar = () => (
     <>
         <ul
@@ -12,10 +22,10 @@ const SideBar = () => (
                 href="../"
             >
                 <div className="sidebar-brand-icon rotate-n-15">
-                    <i className="fas fa-laugh-wink" />
+                    <FontAwesomeIcon className="fa-lg" icon={faFaceSurprise} />
                 </div>
                 <div className="sidebar-brand-text mx-3">
-                    PeerRater
+                    Peer Rater
                 </div>
             </a>
             {/* Divider */}
@@ -23,7 +33,7 @@ const SideBar = () => (
             {/* Nav Item - Dashboard */}
             <li className="nav-item active">
                 <a className="nav-link" href="../">
-                    <i className="fas fa-fw fa-tachometer-alt" />
+                    <FontAwesomeIcon className="fas fa-fw fa-sm mr-2" icon={faHome} />
                     <span>Home</span>
                 </a>
             </li>
@@ -41,7 +51,7 @@ const SideBar = () => (
                     aria-expanded="true"
                     aria-controls="collapseTwo"
                 >
-                    <i className="fas fa-fw fa-cog" />
+                    <FontAwesomeIcon className="fas fa-fw fa-sm mr-2" icon={faUserGroup} />
                     <span>Recent Groups</span>
                 </a>
                 <div
@@ -75,7 +85,7 @@ const SideBar = () => (
                     aria-expanded="true"
                     aria-controls="collapseUtilities"
                 >
-                    <i className="fas fa-fw fa-wrench" />
+                    <FontAwesomeIcon className="fas fa-fw fa-sm mr-2" icon={faPaperclip} />
                     <span>Surveys</span>
                 </a>
                 <div

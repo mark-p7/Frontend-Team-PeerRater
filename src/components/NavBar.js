@@ -34,7 +34,7 @@ const NavBar = () => (
                       />
                       <div className="input-group-append">
                           <button className="btn btn-primary" type="button">
-                              <FontAwesomeIcon icon={faSearch} />
+                              <FontAwesomeIcon className="fas fa-search fa-sm" icon={faSearch} />
                           </button>
                       </div>
                   </div>
@@ -52,7 +52,7 @@ const NavBar = () => (
                           aria-haspopup="true"
                           aria-expanded="false"
                       >
-                          <FontAwesomeIcon icon={faSearch} />
+                          <FontAwesomeIcon className="fas fa-search fa-sm" icon={faSearch} />
                       </a>
                       {/* Dropdown - Messages */}
                       <div
@@ -70,7 +70,7 @@ const NavBar = () => (
                                   />
                                   <div className="input-group-append">
                                       <button className="btn btn-primary" type="button">
-                                          <FontAwesomeIcon icon={faSearch} />
+                                          <FontAwesomeIcon className="fas fa-search fa-sm" icon={faSearch} />
                                       </button>
                                   </div>
                               </div>
@@ -88,7 +88,7 @@ const NavBar = () => (
                           aria-haspopup="true"
                           aria-expanded="false"
                       >
-                          <FontAwesomeIcon icon={faBell} />
+                          <FontAwesomeIcon className="fas fa-list fa-sm fa-fw mr-2 text-gray-400"  icon={faBell} />
                           {/* Counter - Alerts */}
                           <span className="badge badge-danger badge-counter">3+</span>
                       </a>
@@ -101,7 +101,7 @@ const NavBar = () => (
                           <a className="dropdown-item d-flex align-items-center" href="#">
                               <div className="mr-3">
                                   <div className="icon-circle bg-primary">
-                                      <FontAwesomeIcon icon={faFileAlt} />
+                                      <FontAwesomeIcon className="fas fa-list fa-sm fa-fw mr-2 text-gray-400"  icon={faFileAlt} />
                                   </div>
                               </div>
                               <div>
