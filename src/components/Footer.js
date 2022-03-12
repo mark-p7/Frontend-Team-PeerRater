@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const footer={
   footer:{
-      /*Need to fix this to  bottom a different way*/
-      // position: "absolute",
+    //see if position:fixed works 
+      // position: "fixed",
       // bottom: 0,
       // marginBottom: "20px",
       // width: "100%"

@@ -1,5 +1,5 @@
 import React from 'react';
-
+//additional styling
 const surveyStyle={
     list:{
        
@@ -8,7 +8,6 @@ const surveyStyle={
 
     container:{ 
         height: '200px',
-        backgroundColor: "Grey", 
         overflow: 'scroll',
         padding: '10px'
     },
@@ -20,18 +19,30 @@ const surveyStyle={
         margin:'2px'
     }
 }
-
+//Some helper functions for page functionality
 function add_new(){
     var ul = document.getElementById("list");
     var li = document.createElement("li");
     var input = document.getElementById("input").value;
-    li.appendChild(document.createTextNode(input));
-    ul.appendChild(li);
-
+    if(input != ""){
+      li.appendChild(document.createTextNode(input));    
+      ul.appendChild(li);
+    }
+   
+    document.getElementById("input").value = "";
 }
 
 function submit_data(){
+    //must be connected to database
+    document.getElementById("input").value = "";
+    document.getElementById("list").innerHTML = "";
+   
 
+}
+
+function clear_data(){
+    document.getElementById("input").value = "";
+    document.getElementById("list").innerHTML = "";
 }
 
 const NewSurvey = () => (
@@ -45,6 +56,7 @@ const NewSurvey = () => (
         </div>
         <button style={surveyStyle.button}onClick={add_new} type="button" class="btn btn-primary">Add New Category</button>
         <button style={surveyStyle.button}onClick={submit_data} type="button" class="btn btn-primary">Submit</button>
+        <button type="button" onClick={clear_data} class="btn btn-danger">Clear</button>
     </React.Fragment>
 );
 
