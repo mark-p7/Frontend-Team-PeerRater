@@ -9803,6 +9803,10 @@ a:focus {
   overflow-x: hidden;
 }
 
+#wrapper::-webkit-scrollbar {
+  display: none;
+}
+
 #content-wrapper {
   max-height: 100vh;
 }
