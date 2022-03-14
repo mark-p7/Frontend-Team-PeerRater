@@ -5,6 +5,7 @@ const HomePage = () => (
         <div class="">
             <AiFillHome />
             <h1 class="display-4">Home</h1>
+            <h1 class="display-4">TestPush</h1>
         </div>
     </React.Fragment>
 );
