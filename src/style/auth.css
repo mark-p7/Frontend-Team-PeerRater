@@ -41,6 +41,28 @@ body {
     background-size: cover;
 }
 
+.bg-image-createProfile {
+    background: url("../../src/img/background3.png") center;
+    background-size: cover;
+}
+
+
+.profile-box-textinput {
+    /* Linear/White */
+    background: #FFFFFF;
+    /* Linear/Dark Snow */
+    border: 1px solid #C7CCD0;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-family: 'Roboto', serif;
+    height: 50px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #7B809A;
+}
+
 .login-box-username {
     /* Linear/White */
     background: #FFFFFF;
