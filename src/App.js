@@ -37,7 +37,6 @@ function App() {
         <Route path="*" element={<NotFoundPage />} exact />
       </Routes>
     </BrowserRouter>
-  
     </div>
     <Footer />
         </div>
