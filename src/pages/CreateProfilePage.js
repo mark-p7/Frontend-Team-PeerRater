@@ -16,11 +16,11 @@ const CreateProfile = () => (
                                     <div className="text-center mb-5">
                                         <div className="title">PEER RATER</div>
                                     </div>
-                                    <div className="mb-1 just">
-                                        <div className="sign-in-text">Create Profile</div>
+                                    <div className="mb-1">
+                                        <div className="sign-in-text mt-5">Create Profile</div>
                                     </div>
                                     <div className="mb-5">
-                                        <div className="sign-in-description">Please enter your profile details to finish the signup process
+                                        <div className="sign-in-description mt-3">Please enter your profile details to finish the signup process
                                         </div>
                                     </div>
                                     <ProfileForm/>
