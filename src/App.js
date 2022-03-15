@@ -10,41 +10,28 @@ import PrivacyPage from './pages/PrivacyPage';
 import NotFoundPage from './pages/NotFoundPage';
 import ProfilePage from './pages/ProfilePage';
 import NewSurveyPage from './pages/NewSurveyPage';
-import SideBar from './components/SideBar';
-import NavBar from './components/NavBar';
-import Footer from './components/Footer';
 // Routing stuff
 import {
   BrowserRouter,
   Routes,
   Route
 } from 'react-router-dom';
+import SignupPage from "./pages/SignupPage";
+import LoginPage from "./pages/LoginPage";
 
 function App() {
   return (
-    <>
-      <div id="wrapper">
-      <SideBar />
-        <div id="content-wrapper" className="d-flex flex-column">
-    <NavBar />
-    <div className="container" id="main-container">
- 
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} exact />
         <Route path="/privacy" element={<PrivacyPage />} exact />
         <Route path="/profilepage" element={<ProfilePage />} exact />
         <Route path="/newsurvey" element={<NewSurveyPage />} exact />
+        <Route path="/login" element={<LoginPage />} exact />
+        <Route path="/signup" element={<SignupPage />} exact />
         <Route path="*" element={<NotFoundPage />} exact />
       </Routes>
     </BrowserRouter>
-  
-    </div>
-    <Footer />
-        </div>
-      </div>
-    </>
- 
   );
 }
 
