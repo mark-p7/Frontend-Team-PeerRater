@@ -1,21 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
-const footer={
-  footer:{
-    //see if position:fixed works 
-      // position: "fixed",
-      // bottom: 0,
-      // marginBottom: "20px",
-      // width: "100%"
-  }
-}
 const Footer = () => (
   <>
-    <footer className="border-top footer text-muted" style={footer.footer}>
-        <div className="container">
-            &copy; 2022 - FizzBuzzWeb - <a href="/privacy">Privacy</a>
-        </div>
+    <footer className="footer">
+            <div className="row ml-5">
+                <div className="col">
+                    <p className="lead text-muted text-center">© 2022, made with <p className="love">♥</p> by BCIT CST students </p>
+                </div>
+            </div>
     </footer>
   </>
 );
