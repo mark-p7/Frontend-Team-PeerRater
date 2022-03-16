@@ -1,11 +1,21 @@
 import React, { Component } from 'react';
 import {AiFillHome} from "react-icons/ai";
+import Footer from "../components/Footer";
+import SideBar from "../components/SideBar";
+import NavBar from "../components/NavBar";
 
 const HomePage = () => (
-    <React.Fragment>
-        <div class="">
+    <>
+        <div id="wrapper">
+            <SideBar />
+            <div id="content-wrapper" className="d-flex flex-column">
+                <NavBar />
+                <div className="container" id="main-container">
+
+                <React.Fragment>
+        <div className="">
             <AiFillHome />
-            <h1 class="display-4">Home</h1>
+            <h1 className="display-4">Home</h1>
         </div>
         <div class="container">
             <div class="row">
@@ -35,8 +45,12 @@ const HomePage = () => (
                 </div>
             </div>
         </div>
-        
     </React.Fragment>
+                </div>
+                <Footer />
+            </div>
+        </div>
+    </>
 );
 
 export default HomePage;

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
     faSearch,
@@ -14,7 +13,7 @@ import {
 const NavBar = () => (
       <>
           {/* Topbar */}
-          <nav className="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+          <nav className="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow" id="navbartop">
               {/* Sidebar Toggle (Topbar) */}
               <button
                   id="sidebarToggleTop"
@@ -251,6 +250,7 @@ const NavBar = () => (
                           <img
                               className="img-profile rounded-circle"
                               src="../img/undraw_profile.svg"
+                              alt="profile image"
                           />
                       </a>
                       {/* Dropdown - User Information */}
